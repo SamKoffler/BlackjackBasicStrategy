@@ -1,0 +1,62 @@
+import random
+
+
+dealing = True
+
+player_hand = []
+
+dealer_hand = []
+
+while dealing:
+    card = str(random.randint(2,14))
+    if card=="11":
+        card = "J"
+    elif card=="12":
+        card = "Q"
+    elif card=="13":
+        card = "K"
+    elif card=="14":
+        card = "A"
+    if len(player_hand)==2:
+        if len(dealer_hand)==1:
+            dealing = False
+        dealer_hand.append(card)
+    else:
+        player_hand.append(card)
+
+print(f'Your hand is: {",".join(player_hand)}')
+
+print("Dealers card is:", dealer_hand[0])
+
+
+
+print("Options:\n1: Hit\n2: Stand\n3: Double\n4 Split")
+option = int(input("What would you like to do? Select an option:"))
+
+
+
+
+
+
+
+
+
+
+
+
+    # option = 9
+    # while option != 2 and option != 3:
+    #     print("Options:\n1: Hit\n2: Stand\n3: Double\n4 Split")
+    #     option = int(input("What would you like to do? Select an option:"))
+    #     if option == 1 or option == 3:
+    #         card = str(random.randint(2, 14))
+    #         if card == "11":
+    #             card = "J"
+    #         elif card == "12":
+    #             card = "Q"
+    #         elif card == "13":
+    #             card = "K"
+    #         elif card == "14":
+    #             card = "A"
+    #         player_hand.append(card)
+    #     print(f'Your hand is: {",".join(player_hand)}')
