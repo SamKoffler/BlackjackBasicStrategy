@@ -42,7 +42,7 @@ option = int(input("What would you like to do? Select an option:"))
 
 
 
-
+#for playing regular game
 
     # option = 9
     # while option != 2 and option != 3:
