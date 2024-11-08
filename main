@@ -12,6 +12,7 @@ def deal_card():
         card = "A"
     return card
 
+basic_strategy_table = {}
 
 
 dealing = True
